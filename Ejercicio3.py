@@ -1,8 +1,3 @@
-from mailbox import NoSuchMailboxError
-
-from sympy import laguerre_poly
-
-
 class naves():
     def __init__(self,nombre,largo, tripulacion,cantidad_pasajeros):
         self.nombre = nombre
@@ -65,22 +60,24 @@ class destructro_estelar (naves):
 
 
 
-
-
-
 def navegando ():
     A = alcon_milenario ("alcon_milenario",200,"cacas",54)
     print(A)
     E = estrella_muerte("estrella de la muerte",500,"mamuts",42)
-    X = ala_X ("Ala X", )
     return A,E
 
-def ordenando_naves():
+class datos(naves):
+    X = ala_X ("Ala X", )
 
-def nave_mas_tripulacion():
+def ordenando_naves(datos,pasajeros):
+    D = self.pasajeros 
+    D.sort(reverse=True)
+    return 
 
-def buscador_AT ():
+#def nave_mas_tripulacion():
 
-def llevar_pasajeros():
+#def buscador_AT ():
 
-def 
+#def llevar_pasajeros():
+
+#def 

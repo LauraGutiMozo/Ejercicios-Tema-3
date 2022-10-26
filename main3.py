@@ -6,6 +6,7 @@ from Ejercicio3 import ala_X
 from Ejercicio3 import navegando
 
 if __name__=="__main__":
+    print("Ejercicio 3")
     navegando()
 
 
