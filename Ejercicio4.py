@@ -1,3 +1,6 @@
+from turtle import Terminator
+
+
 class Nodo (object):
     info,sig =None,None
 
@@ -34,7 +37,7 @@ class polinomio(object):
         aux = aux.sig
         actual.sig = aux
     
-    def obener_numero (polinomio,termino):
+    def obtener_numero (polinomio,termino):
         aux = polinomio.max_termino
         while aux is not None and aux.info.termino > termino:
             aux = aux.sig 
@@ -56,8 +59,29 @@ class polinomio(object):
                 aux =aux.sig
 
         return pol
-
-
         
+    def restar ():
+        
+    def dividir (polinomio1,polinomio2):
+        paux = polinomio()
+        pol1=polinomio1.max_termino
+        
+        while pol1 is not None:
+            pol2 =polinomio2.max_termino
+            while pol2 is not None:
+                termino = pol1.info.termino + pol2.info.termino 
+                numero =pol1.info.numero / pol2.info.valor
+                if obtener_numero (paux,termino)!=0:
+                    valor += obtener_numero (paux,termino)
+                    cambiar_termino(paux, termino,numero)
+                else:
+                    añadir_termino (paux, termino,numero)
+                pol2 =pol2.sig
+            pol1=pol1.sig
+        return paux
+
+
+
+
 
     
