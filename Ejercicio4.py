@@ -1,6 +1,3 @@
-from turtle import Terminator
-
-
 class Nodo (object):
     info,sig =None,None
 
