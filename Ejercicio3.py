@@ -26,7 +26,7 @@ class lanzadera_imperial (naves):
     def __str__(self):
         return naves.__str__(self) 
 
-class destructor_esteral(naves):
+class destructor_estelar(naves):
     def __init__(self,nombre,largo, tripulacion,cantidad_pasajeros):
         naves.__init__(self,nombre,largo, tripulacion,cantidad_pasajeros)
     def __str__(self):
@@ -51,32 +51,69 @@ class nave_control_droides(naves):
     def __str__(self):
         return naves.__str__(self) 
 
-class destructro_estelar (naves):
-    def __init__(self,nombre,largo, tripulacion,cantidad_pasajeros):
-        naves.__init__(self,nombre,largo, tripulacion,cantidad_pasajeros)
-    def __str__(self):
-        return naves.__str__(self) 
 
+A = alcon_milenario ("alcon_milenario",200,20,2000)
+E = estrella_muerte("estrella de la muerte",500,50,50000)
+L = lanzadera_imperial("lanzadera imperial", 300,30,3000)
+D = destructor_estelar("Destructor estelar",400,50,5000)
+X = ala_X ("Ala X",700,70,7000 )
+AT = AT_AT("AT_AT",800,80,8000)
+C = nave_control_droides("Nave controladora de dorides",100,10,1000)
 
-
-
+lista = []
+lista.append (A)
+lista.append (E)
+lista.append (L)
+lista.append (D)
+lista.append (X)
+lista.append (AT)
+lista.append (C)
+#Punto 1
 def navegando ():
-    A = alcon_milenario ("alcon_milenario",200,"cacas",54)
     print(A)
-    E = estrella_muerte("estrella de la muerte",500,"mamuts",42)
+    print (E)
     return A,E
 
-class datos(naves):
-    X = ala_X ("Ala X", )
 
-def ordenando_naves(datos,pasajeros):
-    D = self.pasajeros 
-    D.sort(reverse=True)
-    return 
+#Punto 2
+lista_pasaj = []
+lista_pasaj.append(A.cantidad_pasajeros)
+lista_pasaj.append(E.cantidad_pasajeros)
+lista_pasaj.append(L.cantidad_pasajeros)
+lista_pasaj.append(D.cantidad_pasajeros)
+lista_pasaj.append(X.cantidad_pasajeros)
+lista_pasaj.append(AT.cantidad_pasajeros)
+lista_pasaj.append(C.cantidad_pasajeros)
+print (lista_pasaj)
 
-#def nave_mas_tripulacion():
+def ordenando_naves():
+    lista.sort()
+    print(f"Estas son las naves ordenadas según la cantidad de pasajeros: {lista}")
 
-#def buscador_AT ():
+#Punto 3 
+lista_trip = []
+lista.append(A.tripulacion)
+lista.append(E.tripulacion)
+lista.append(L.tripulacion)
+lista.append(D.tripulacion)
+lista.append(X.tripulacion)
+lista.append(AT.tripulacion)
+lista.append(C.tripulacion)
+print (lista_trip)
+
+def nave_mas_tripulacion():
+    lista_trip.sort()
+    print(f"Estas son las naves ordenadas según la cantidad de tripulación: {lista_trip}")
+
+#punto 4
+def buscador_AT (lista):
+    AT =[]
+    for n in lista:
+        nombre = n
+        if nombre[:2]== "AT":
+            AT.append(n)
+    for i in AT:
+        print("nombre",i)
 
 #def llevar_pasajeros():
 
