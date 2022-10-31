@@ -138,4 +138,4 @@ def llevar_pasajeros():
     else:
         lista_menos_seis.append = []
 
-#punto 6
+
